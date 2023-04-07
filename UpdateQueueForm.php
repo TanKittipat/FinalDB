@@ -30,7 +30,7 @@
                 <h3>ฟอร์มแก้ไขข้อมูลคิว</h3>
                 <form action="UpdateQueue.php" method="POST">
 
-                    <label for="name" class="col-sm-2 col-form-label"> วันที่จองเข้ารับการรักษา : </label>
+                    <label for="name" class="col-sm-5 col-form-label"> วันที่จองเข้ารับการรักษา : </label>
                     <input type="text" name="QDate" class="form-control" required value="<?= $result['QDate']; ?>">
 
 
