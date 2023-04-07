@@ -18,7 +18,8 @@
     if (isset($_GET['QDate'], $_GET['QNumber'])) {
         $query_select = 'SELECT * FROM queue WHERE QDate=? and QNumber=?';
         $stmt = $conn->prepare($query_select);
-        $stmt->execute([$_GET['QDate'], $_GET['QNumber']]);
+        $params = array($_GET['QDate'], $_GET['QNumber']);
+        $stmt->execute($params);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
     }
     ?>
