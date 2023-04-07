@@ -28,8 +28,8 @@
 
     if (isset($_POST['submit'])) {
         if (!empty($_POST['QDate']) && !empty($_POST['QNumber'])) {
-            echo '<br>' . $_POST['QNumber'];
-
+            // echo '<br>' . $_POST['QNumber'];
+    
             $sql = "insert into queue 
 							values (:QDate, :QNumber, :Pid, 'รอเข้ารับการรักษา')";
 
